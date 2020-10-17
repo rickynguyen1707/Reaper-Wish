@@ -204,7 +204,7 @@ GameObject:
   - component: {fileID: 166154416}
   - component: {fileID: 166154418}
   - component: {fileID: 166154417}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Platform details
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -900,7 +900,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -941,7 +941,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 239316682}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: -13.5, y: -1.7, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -975,7 +975,7 @@ GameObject:
   - component: {fileID: 266740352}
   - component: {fileID: 266740351}
   - component: {fileID: 266740350}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5760,8 +5760,8 @@ Transform:
   - {fileID: 2029200291}
   - {fileID: 1705764360}
   - {fileID: 542657105}
-  - {fileID: 664867074}
   - {fileID: 193087924}
+  - {fileID: 664867074}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5878,6 +5878,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  jumpForce: 10
+  extraJump: 2
+  groundCheckRadius: 1.5
   groundCheckPos: {fileID: 1866479650}
   whatIsGround:
     serializedVersion: 2
@@ -5923,12 +5926,12 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 2.5
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!212 &1657952657
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5966,8 +5969,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1820859575
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e1cf706dd9ac6a943b85fff6214d3324, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -5988,8 +5991,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1657952653}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.9017406, y: -1.9039004, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -13.5, y: -1.7, z: 0}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0}
   m_Children:
   - {fileID: 1866479650}
   m_Father: {fileID: 0}
@@ -6007,10 +6010,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b5fb5fb07395d34e8e0326b54fdf056, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dashSpeed: 0
-  dashTime: 0
-  checkRadius: 0
-  dashCount: 0
+  dashSpeed: 35
+  dashTime: 0.05
+  checkRadius: 1.5
+  dashCount: 3
   groundCheck: {fileID: 1866479650}
   whatIsGround:
     serializedVersion: 2
@@ -6045,7 +6048,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1866479649}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.31, y: -2.15, z: 0}
+  m_LocalPosition: {x: 0.31, y: -2.103, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1657952658}

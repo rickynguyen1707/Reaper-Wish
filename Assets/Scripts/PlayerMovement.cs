@@ -11,12 +11,15 @@ public class PlayerMovement : MonoBehaviour
     private SpriteRenderer sr;
     private bool isFacingRight = true;
     private bool isGrounded = false;
+    private int extraJumpValue = 1;
 
     //Things to move the player.
     [SerializeField] public float speed;
+    [SerializeField] private float jumpForce;
+    [SerializeField] private int extraJump;
+    [SerializeField] private float groundCheckRadius = 0.1f;
     [SerializeField] Transform groundCheckPos;
     [SerializeField] private LayerMask whatIsGround;
-    private float groundCheckRadius = 0.1f;
 
     void Start()
     {
@@ -29,11 +32,26 @@ public class PlayerMovement : MonoBehaviour
         //Move the char left and right.
         float horizMove = Input.GetAxis("Horizontal");
         isGrounded = GroundCheck();
+        if (isGrounded)
+        {
+            extraJumpValue = extraJump;
+        }
         rb.velocity = new Vector2(horizMove * speed, rb.velocity.y);
-
         if (isFacingRight && rb.velocity.x < 0 || (!isFacingRight && rb.velocity.x > 0))
         {
             Flip();
+        }
+        if (Input.GetKeyDown(KeyCode.UpArrow) && extraJumpValue > 0)
+        {
+            extraJumpValue--;
+            isGrounded = false;
+            rb.velocity = Vector2.up * jumpForce;
+        }
+        else if(Input.GetKeyDown(KeyCode.UpArrow) && isGrounded)
+        {
+            extraJumpValue--;
+            isGrounded = false;
+            rb.velocity = Vector2.up * jumpForce;
         }
     }
     private void Flip()

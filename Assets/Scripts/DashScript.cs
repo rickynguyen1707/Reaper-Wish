@@ -22,7 +22,7 @@ public class DashScript : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        dashTime = startDashTime;
+        startDashTime = dashTime;
         dashNumber = dashCount;
     }
     void FixedUpdate()
@@ -30,6 +30,7 @@ public class DashScript : MonoBehaviour
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
         if (isGrounded)
         {
+            startDashTime = dashTime;
             dashNumber = dashCount;
         }
 
@@ -84,15 +85,15 @@ public class DashScript : MonoBehaviour
         }
         else
         {
-            if (dashTime <= 0)
+            if (startDashTime <= 0)
             {
                 direction = 0;
-                dashTime = startDashTime;
                 rb.velocity = Vector2.zero;
+                startDashTime = dashTime;
             }
             else
             {
-                dashTime -= Time.deltaTime;
+                startDashTime -= Time.deltaTime;
                 switch (direction)
                 {
                     case 1:
