@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Levels/Reaper Wish.unity
+- path: Assets/Levels/Level3.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
