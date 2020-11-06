@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 4733129426878664210}
   - component: {fileID: 4733129426878664209}
   - component: {fileID: 4733129426878664208}
-  - component: {fileID: 4733129426878664206}
-  - component: {fileID: 4733129426878664211}
   - component: {fileID: 5790221883059578456}
+  - component: {fileID: 845488709199873131}
+  - component: {fileID: 3525659132719686075}
   m_Layer: 10
   m_Name: Reaper
   m_TagString: Player
@@ -103,51 +103,11 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 2.5
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 9f090e292faaca04b9465938f6ca05ba, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &4733129426878664206
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4733129426878664205}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac9e43ec67e44e64184b882dfd5dc1e0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  jumpForce: 10
-  extraJump: 2
-  groundCheckRadius: 1.5
-  groundCheckPos: {fileID: 4733129426938589090}
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 2048
---- !u!114 &4733129426878664211
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4733129426878664205}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b5fb5fb07395d34e8e0326b54fdf056, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dashSpeed: 35
-  dashTime: 0.05
-  checkRadius: 1.5
-  dashCount: 3
-  groundCheck: {fileID: 4733129426938589090}
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 2048
 --- !u!70 &5790221883059578456
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -164,6 +124,49 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 4, y: 0.0001}
   m_Direction: 0
+--- !u!114 &845488709199873131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4733129426878664205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf15abb7338459c48a0c192a10e22a0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  groundCheck: {fileID: 4733129426938589090}
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 2048
+  UnlockDashMove: 1
+  dashSpeed: 25
+  dashTime: 0.2
+  startDashTime: 0.2
+  checkRadius: 1
+  dashCount: 1
+--- !u!114 &3525659132719686075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4733129426878664205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c038ea89e85dc7418d9a7c3b4d330df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  jumpForce: 7.5
+  checkRadius: 1
+  gameController: {fileID: 0}
+  groundCheck: {fileID: 4733129426938589090}
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 2048
+  extraJumpsValue: 1
 --- !u!1 &4733129426938589089
 GameObject:
   m_ObjectHideFlags: 0

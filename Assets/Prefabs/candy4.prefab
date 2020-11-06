@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 4477360892417985567}
   - component: {fileID: 8266098607707529670}
   - component: {fileID: 9117697718409561662}
+  - component: {fileID: 8512976911971889595}
+  - component: {fileID: 2650301329082912895}
   m_Layer: 0
   m_Name: candy4
   m_TagString: Untagged
@@ -103,3 +105,33 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8512976911971889595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8853906071748981385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 648a321458bf5de4b9b93ba9f2c8fe54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 1
+  gameControllerScript: {fileID: 0}
+--- !u!70 &2650301329082912895
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8853906071748981385}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.43168628, y: 0.62}
+  m_Direction: 0
