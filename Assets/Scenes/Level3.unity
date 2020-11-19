@@ -9989,6 +9989,11 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: -1054765645
       objectReference: {fileID: 0}
+    - target: {fileID: 3252401202253722797, guid: b4716cfa45560134fa451c859fb2dc10,
+        type: 3}
+      propertyPath: m_PlaneDistance
+      value: 7.2
+      objectReference: {fileID: 0}
     - target: {fileID: 3252401202802858245, guid: b4716cfa45560134fa451c859fb2dc10,
         type: 3}
       propertyPath: m_Text
@@ -10088,6 +10093,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4722099513230398816, guid: b4716cfa45560134fa451c859fb2dc10,
+        type: 3}
+      propertyPath: m_Text
+      value: Level 03
       objectReference: {fileID: 0}
     - target: {fileID: 5309311434480085428, guid: b4716cfa45560134fa451c859fb2dc10,
         type: 3}
