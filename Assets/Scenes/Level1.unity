@@ -1145,7 +1145,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 239316682}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.8291512, y: -1.7070949, z: -10}
+  m_LocalPosition: {x: -6.1624813, y: -1.704879, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -8073,6 +8073,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CharCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 3252401202253722796, guid: b4716cfa45560134fa451c859fb2dc10,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3252401202253722796, guid: b4716cfa45560134fa451c859fb2dc10,
+        type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 2024.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3252401202253722796, guid: b4716cfa45560134fa451c859fb2dc10,
+        type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 768
       objectReference: {fileID: 0}
     - target: {fileID: 3252401202253722797, guid: b4716cfa45560134fa451c859fb2dc10,
         type: 3}
