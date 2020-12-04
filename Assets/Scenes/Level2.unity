@@ -401,11 +401,31 @@ PrefabInstance:
       propertyPath: DashCounter
       value: 
       objectReference: {fileID: 1959202808}
+    - target: {fileID: 845488709199873131, guid: 685da29814aa90f4080d1852f803fde1,
+        type: 3}
+      propertyPath: checkRadius
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 845488709199873131, guid: 685da29814aa90f4080d1852f803fde1,
+        type: 3}
+      propertyPath: dashSpeed
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 3525659132719686075, guid: 685da29814aa90f4080d1852f803fde1,
         type: 3}
       propertyPath: JumpCounter
       value: 
       objectReference: {fileID: 727732641}
+    - target: {fileID: 3525659132719686075, guid: 685da29814aa90f4080d1852f803fde1,
+        type: 3}
+      propertyPath: jumpForce
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 3525659132719686075, guid: 685da29814aa90f4080d1852f803fde1,
+        type: 3}
+      propertyPath: checkRadius
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 4733129426878664205, guid: 685da29814aa90f4080d1852f803fde1,
         type: 3}
       propertyPath: m_Name

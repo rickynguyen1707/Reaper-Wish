@@ -1121,7 +1121,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 7.5
+  orthographic size: 5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1145,7 +1145,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 239316682}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.1624813, y: -1.704879, z: -10}
+  m_LocalPosition: {x: -9.497477, y: -1.7026594, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6754,7 +6754,7 @@ MonoBehaviour:
   m_Follow: {fileID: 1657952658}
   m_Lens:
     FieldOfView: 60
-    OrthographicSize: 7.5
+    OrthographicSize: 5
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -8857,11 +8857,31 @@ PrefabInstance:
       propertyPath: DashCounter
       value: 
       objectReference: {fileID: 351678482}
+    - target: {fileID: 845488709199873131, guid: 685da29814aa90f4080d1852f803fde1,
+        type: 3}
+      propertyPath: dashSpeed
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 845488709199873131, guid: 685da29814aa90f4080d1852f803fde1,
+        type: 3}
+      propertyPath: checkRadius
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 3525659132719686075, guid: 685da29814aa90f4080d1852f803fde1,
         type: 3}
       propertyPath: JumpCounter
       value: 
       objectReference: {fileID: 1191976776}
+    - target: {fileID: 3525659132719686075, guid: 685da29814aa90f4080d1852f803fde1,
+        type: 3}
+      propertyPath: jumpForce
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3525659132719686075, guid: 685da29814aa90f4080d1852f803fde1,
+        type: 3}
+      propertyPath: checkRadius
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 4733129426878664205, guid: 685da29814aa90f4080d1852f803fde1,
         type: 3}
       propertyPath: m_Name

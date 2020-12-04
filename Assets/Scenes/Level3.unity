@@ -141,6 +141,16 @@ PrefabInstance:
       propertyPath: DashCounter
       value: 
       objectReference: {fileID: 610704213}
+    - target: {fileID: 845488709199873131, guid: 685da29814aa90f4080d1852f803fde1,
+        type: 3}
+      propertyPath: dashSpeed
+      value: 17.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 845488709199873131, guid: 685da29814aa90f4080d1852f803fde1,
+        type: 3}
+      propertyPath: checkRadius
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 3525659132719686075, guid: 685da29814aa90f4080d1852f803fde1,
         type: 3}
       propertyPath: gameController
@@ -151,6 +161,16 @@ PrefabInstance:
       propertyPath: JumpCounter
       value: 
       objectReference: {fileID: 1847304105}
+    - target: {fileID: 3525659132719686075, guid: 685da29814aa90f4080d1852f803fde1,
+        type: 3}
+      propertyPath: jumpForce
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3525659132719686075, guid: 685da29814aa90f4080d1852f803fde1,
+        type: 3}
+      propertyPath: checkRadius
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 4733129426878664205, guid: 685da29814aa90f4080d1852f803fde1,
         type: 3}
       propertyPath: m_Name

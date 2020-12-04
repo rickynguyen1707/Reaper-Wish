@@ -68,16 +68,19 @@ public class PlayerController : MonoBehaviour
             extraJumps = extraJumpsValue;
         }
         //I have 2 different jump criterias.
-        //1) if you're on the ground you can jump.
+        //1) if you're on the ground you can jump without using your extra jump.
         //2) if you're in the air and still have extra jumps, you can jump.
         if (Input.GetKeyDown(KeyCode.UpArrow) && extraJumps > 0)
         {
-            extraJumps--;
-            rb.velocity = Vector2.up * jumpForce;
-        }
-        if (Input.GetKeyDown(KeyCode.UpArrow) && isGrounded == true)
-        {
-            rb.velocity = Vector2.up * jumpForce;
+            if (isGrounded)
+            {
+                rb.velocity = Vector2.up * jumpForce;
+            }
+            else
+            {
+                extraJumps--;
+                rb.velocity = Vector2.up * jumpForce;
+            }
         }
         UpdateJumpCounter();
     }
