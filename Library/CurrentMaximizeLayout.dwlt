@@ -21,10 +21,10 @@ MonoBehaviour:
     y: 30
     width: 2560
     height: 1347
-  m_MinSize: {x: 678, y: 492}
+  m_MinSize: {x: 677, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 6505
+  controlID: 775
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -136,10 +136,10 @@ MonoBehaviour:
     y: 0
     width: 1823
     height: 1347
-  m_MinSize: {x: 403, y: 492}
+  m_MinSize: {x: 401, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 6506
+  controlID: 776
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -161,10 +161,10 @@ MonoBehaviour:
     y: 0
     width: 1823
     height: 853
-  m_MinSize: {x: 403, y: 221}
-  m_MaxSize: {x: 8003, y: 4021}
+  m_MinSize: {x: 401, y: 221}
+  m_MaxSize: {x: 8001, y: 4021}
   vertical: 0
-  controlID: 6507
+  controlID: 777
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -222,7 +222,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 48cbffff8ed9ffffd6e2ffffc0ebffff8af8ffff2cfbffff40620000
+      m_ExpandedIDs: ccc6ffff6ac7ffff24caffff3ecaffff3acbffff42cbffff9ccdffffbecfffff64d0ffff38fbffffa25f0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -265,8 +265,8 @@ MonoBehaviour:
     y: 0
     width: 1287
     height: 853
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 8}
   m_Panes:
   - {fileID: 8}
@@ -312,9 +312,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 30.123474, y: 1.468689, z: -10.339844}
+    m_Target: {x: 9.022035, y: 1.5586091, z: -10.511093}
     speed: 2
-    m_Value: {x: 30.123474, y: 1.468689, z: -10.339844}
+    m_Value: {x: 9.022035, y: 1.5586091, z: -10.511093}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -609,21 +609,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Scenes
     m_Globs: []
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\juneau\Documents\GitHub\Reapers WIsh\Reaper-Wish
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 0a470000
-    m_LastClickedID: 18186
-    m_ExpandedIDs: 00000000b2460000b4460000b6460000b8460000ba460000bc46000000ca9a3b
+    m_SelectedIDs: 12470000
+    m_LastClickedID: 18194
+    m_ExpandedIDs: 00000000c0460000c2460000c4460000c6460000c8460000ca46000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -651,7 +651,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000b2460000b4460000b6460000b8460000ba460000bc46000000ca9a3b
+    m_ExpandedIDs: 00000000c0460000c2460000c4460000c6460000c8460000ca46000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -676,9 +676,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: a4620000
-    m_LastClickedInstanceID: 25252
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: b0560000
+    m_LastClickedInstanceID: 22192
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000304e0000f240000000000000b03e0000a43e0000a63e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -928,10 +928,10 @@ MonoBehaviour:
     y: 0
     width: 737
     height: 1347
-  m_MinSize: {x: 275, y: 271}
-  m_MaxSize: {x: 4001, y: 8021}
+  m_MinSize: {x: 276, y: 292}
+  m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
-  controlID: 6457
+  controlID: 770
 --- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -990,7 +990,7 @@ MonoBehaviour:
     m_CachedPref: 160
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: 25252
+  m_LastInspectedObjectInstanceID: 22192
   m_LastVerticalScrollValue: 0
   m_AssetGUID: 
   m_InstanceID: 0

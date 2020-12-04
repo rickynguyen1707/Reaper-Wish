@@ -9317,7 +9317,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: candy1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4772054347764904725, guid: 28540d8efb1950544bd91840a346ae94, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 28540d8efb1950544bd91840a346ae94, type: 3}
 --- !u!1 &1054526362 stripped
 GameObject:
@@ -9357,6 +9358,19 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1054526361}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1054526365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1054526362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 288003d30a43a274da2001851705de5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameControllerScript: {fileID: 368902044}
 --- !u!1 &1151240639 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8333974517869039115, guid: b4716cfa45560134fa451c859fb2dc10,
