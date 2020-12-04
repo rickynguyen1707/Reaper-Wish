@@ -6,11 +6,11 @@ using UnityEngine.Video;
 
 public class LeaveCredits : MonoBehaviour
 {
-    VideoPlayer video;
+    public VideoPlayer video;
 
     void Awake()
     {
-        video = GetComponent<VideoPlayer>();
+        video.url = System.IO.Path.Combine(Application.streamingAssetsPath, "credist.mp4");
         video.Play();
         video.loopPointReached += CheckOver;
     }
